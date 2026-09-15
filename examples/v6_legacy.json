@@ -1,0 +1,28 @@
+{
+  "schema": "catadioptric-lab-v1",
+  "uiVersion": "6",
+  "parameters": {
+    "a0": 8,
+    "b0": 6,
+    "scale": 1,
+    "mode": "angles",
+    "lo": -40,
+    "hi": 30,
+    "rin0": 1.914,
+    "rout0": 10.3923,
+    "f": 4.8,
+    "pitch": 3,
+    "nx": 2048,
+    "ny": 1536,
+    "margin": 24,
+    "useFpx": false,
+    "fpx": 1600,
+    "inspect": 0,
+    "yaw": 0,
+    "tilt": 0,
+    "panoWidth": 1800,
+    "dx": 0,
+    "dz": 0
+  },
+  "status": "IDEAL_GEOMETRY_ONLY_NOT_HARDWARE_VALIDATED"
+}

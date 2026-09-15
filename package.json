@@ -1,0 +1,11 @@
+{
+  "name": "catadioptric-lab",
+  "version": "7.0.0",
+  "private": true,
+  "description": "Offline central catadioptric geometry explorer",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node scripts/test.cjs",
+    "check": "node scripts/build.cjs --check && node scripts/test.cjs"
+  }
+}

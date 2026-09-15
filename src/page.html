@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<title>折反射实验台 v7 · 光学设计</title>
+<meta name="description" content="交互式探索双曲面镜、相机与传感器：实时光路、角度采样、规格核对、撤销重做和离线参数导出。理想几何工具，不替代实物标定。">
+<link rel="canonical" href="https://shiuhou.github.io/catadioptric-lab/">
+<meta property="og:type" content="website"><meta property="og:title" content="Catadioptric Lab · 折反射实验台">
+<meta property="og:description" content="看着光路调参数：双曲面镜 × 任意相机，单文件离线运行。">
+<meta property="og:url" content="https://shiuhou.github.io/catadioptric-lab/">
+<meta property="og:image" content="https://shiuhou.github.io/catadioptric-lab/assets/share-preview.png">
+<meta property="og:image:alt" content="折反射实验台的实时光路与相机圆环设计界面">
+<meta name="app-version" content="7.0.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23137e70%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2223%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%223%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2214%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%222%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%224%22%20fill%3D%22%23ffffff%22/%3E%3C/svg%3E">
+{{STYLES}}
+</head>
+<body>
+<aside class="sidebar" aria-label="实验台页面导航">
+ <div class="brand"><svg class="brand-symbol" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="15.5" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="18" r="9.5" stroke="currentColor" stroke-width="1" opacity=".55"/><path d="M3 18h6m18 0h6M18 3v6m0 18v6" stroke="currentColor" stroke-width="1.2"/><circle cx="18" cy="18" r="2.5" fill="currentColor"/></svg><div><div class="brand-name">折反射实验台</div><div class="brand-caption">CATADIOPTRIC / V7</div></div></div>
+ <nav id="navigation" class="nav-list" aria-label="页面选择"></nav>
+ <div class="sidebar-bottom"><div class="status-line"><i class="live-dot" aria-hidden="true"></i>离线运行 · 无需安装</div><div class="sidebar-note">透视相机 × 双曲面镜<br>理想几何 · v7.0.0</div></div>
+</aside>
+<main class="workspace" id="workspace">
+ <header class="page-header"><div><div class="eyebrow" id="pageEyebrow">01 / DESIGN</div><h1 id="pageTitle">光学设计</h1><p class="page-description" id="pageDescription">调镜面、视野和镜头，在同一张图里看变化。</p></div><div class="header-actions"><span id="designStatus" class="state-badge"><i class="live-dot" aria-hidden="true"></i><span>画幅容纳完整</span></span><button id="reset" class="outline-button" title="重置全部参数与视尺，可用上一步撤销">恢复默认</button></div></header>
+ <section class="recovery-banner" id="recoveryBanner" hidden aria-label="恢复上次设计">
+ <div><strong id="recoveryTitle">发现上次设计</strong><p id="recoveryMessage"></p></div>
+ <div class="recovery-actions"><button class="primary-button" id="recoverSession">恢复设计</button><button class="outline-button" id="discardSession">使用默认示例</button></div>
+ </section>
+ <div class="history-bar" id="historyBar" role="region" aria-label="调参撤销与重做">
+  <div class="history-controls" role="group" aria-label="上一步撤销，下一步重做；不是页面翻页">
+   <button type="button" id="historyUndo" class="history-button" disabled aria-label="上一步：撤销最近一次参数修改" aria-keyshortcuts="Control+z Meta+z" title="上一步：撤销最近一次参数修改（Ctrl / ⌘ Z）"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 4 9l5 5M4 9h9a7 7 0 0 1 7 7v3"/></svg><span>上一步</span><span class="button-sub">撤销</span></button>
+   <button type="button" id="historyRedo" class="history-button" disabled aria-label="下一步：重做已撤销的参数修改" aria-keyshortcuts="Control+Shift+z Meta+Shift+z Control+y" title="下一步：重做已撤销的修改（Ctrl / ⌘ Shift Z 或 Ctrl Y）"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5-5 5M20 9h-9a7 7 0 0 0-7 7v3"/></svg><span>下一步</span><span class="button-sub">重做</span></button>
+  </div>
+  <div class="history-summary"><span class="history-position" id="historyPosition" title="当前步骤 / 本次打开保留的步骤；最多保留最近 100 步">0 / 0</span><span class="history-note" id="historyNote">调参撤销 / 重做 · 一次拖动记一步</span></div>
+  <button class="save-status" id="localStatus" title="查看本地恢复与隐私设置">本地恢复</button><span class="history-hint" title="数字输入框内保留系统的文本撤销；离开输入框后快捷键撤销参数修改。">Ctrl / ⌘ Z 撤销</span>
+ </div>
+ <section id="stage" class="stage" aria-label="实时联动的图示">
+  <div class="stage-toolbar"><span class="stage-title"><i class="live-dot" aria-hidden="true"></i><span id="stageTitle">实时光路</span></span><div class="stage-options"><label class="ghost-check" id="ghostLabel"><input type="checkbox" id="ghost" checked><span id="ghostText">对照调整前</span></label><button class="fit-button pin-quick" id="pinQuick" title="把当前参数固定为比较基线；可撤销">固定基线</button><button class="fit-button" id="fitView" title="同时适应当前与对照设计；只有点击才改变图示比例尺">适应图示</button><button class="fit-button scale-reset" id="resetView" title="回到初始固定毫米 / 像素比例尺">还原视尺</button></div></div>
+  <div class="mobile-switch" id="mobileSwitch"><button data-scene="mirror" class="active">实物</button><button data-scene="sensor">成像</button></div>
+  <div class="main-scenes" id="mainScenes"><div class="scene mobile-active" id="mirrorScene"><div class="scene-heading"><span id="mirrorHeading">镜面与镜头</span><small id="mirrorTag">实物空间 / mm</small></div><div class="scene-visual" id="mirrorVisual"></div><div class="scene-foot" id="mirrorFoot"></div></div><div class="scene" id="sensorScene"><div class="scene-heading"><span id="sensorHeading">相机拍到的圆环</span><small id="sensorTag">像素空间 / px</small></div><div class="scene-visual" id="sensorVisual"></div><div class="scene-foot" id="sensorFoot"></div></div></div>
+  <div class="pano-scenes" id="panoScenes" hidden><div class="pano-panel raw-panel"><div class="pano-title">环形原图<small>合成环境</small></div><canvas id="rawCanvas" aria-label="合成方向纹理的环形画面"></canvas></div><div class="pano-panel unwrap-panel"><div class="pano-title" id="panoTitle">等俯仰展开</div><canvas id="equalCanvas" aria-label="等俯仰全景"></canvas><canvas id="linearCanvas" aria-label="线性圆环全景" hidden></canvas><div class="pano-pills"><button data-pano="equal" class="active">等俯仰展开</button><button data-pano="linear">线性圆环展开</button></div><div class="pano-note">棋盘格 = 没拍到；合成图不是实际镜头画质。</div></div></div>
+  <div class="stage-response"><div class="response-copy"><span id="responseKey" class="response-key">整体大小 s</span><span id="responseText" class="response-text">实体大小改变，成像圆环不变。</span></div><div id="stageMetrics" class="stage-metrics"></div><button id="formulaLink" class="formula-link" aria-expanded="false" aria-controls="inlineFormula">对应公式 ▾</button></div>
+  <aside id="inlineFormula" class="inline-formula" hidden aria-label="当前参数公式"></aside>
+ </section>
+ <div class="global-warning" id="warning" role="status" hidden></div>
+ <div id="pageContent"></div>
+ <div class="bottom-notes" id="bottomNotes"><span>理想几何 · 未包含对焦、支架遮挡、制造误差与滚动快门</span><button data-page="formulas">查看模型边界 ↗</button></div>
+</main>
+<input type="file" accept=".json,application/json" id="importFile" hidden><div id="toast" class="toast" role="status" aria-live="polite"></div>
+{{OPTICS}}
+{{CAMERA_SPEC}}
+{{APP}}
+</body></html>

@@ -1,0 +1,452 @@
+
+> catadioptric-lab@7.0.0 test
+> node --test tests/*.test.cjs
+
+TAP version 13
+# Subtest: default analytic reference values
+ok 1 - default analytic reference values
+  ---
+  duration_ms: 2.676028
+  type: 'test'
+  ...
+# Subtest: 2000 seeded angle/radius/pixel round trips and independent reflected directions
+ok 2 - 2000 seeded angle/radius/pixel round trips and independent reflected directions
+  ---
+  duration_ms: 9.733154
+  type: 'test'
+  ...
+# Subtest: 300 derivative samples agree with central finite differences
+ok 3 - 300 derivative samples agree with central finite differences
+  ---
+  duration_ms: 0.725543
+  type: 'test'
+  ...
+# Subtest: similarity scales physical lengths but not ring pixel radii
+ok 4 - similarity scales physical lengths but not ring pixel radii
+  ---
+  duration_ms: 0.253144
+  type: 'test'
+  ...
+# Subtest: increasing focal length changes projection, not mirror
+ok 5 - increasing focal length changes projection, not mirror
+  ---
+  duration_ms: 1.094679
+  type: 'test'
+  ...
+# Subtest: calibrated fpx decouples pixel radius from pitch
+ok 6 - calibrated fpx decouples pixel radius from pitch
+  ---
+  duration_ms: 0.18987
+  type: 'test'
+  ...
+# Subtest: same physical sensor with twice the sampling density
+ok 7 - same physical sensor with twice the sampling density
+  ---
+  duration_ms: 0.215929
+  type: 'test'
+  ...
+# Subtest: angles and explicit radii represent the same mirror
+ok 8 - angles and explicit radii represent the same mirror
+  ---
+  duration_ms: 0.161038
+  type: 'test'
+  ...
+# Subtest: sensor fit immediately around the inclusive safety boundary
+ok 9 - sensor fit immediately around the inclusive safety boundary
+  ---
+  duration_ms: 0.35185
+  type: 'test'
+  ...
+# Subtest: azimuth coverage in four known regimes
+ok 10 - azimuth coverage in four known regimes
+  ---
+  duration_ms: 0.405149
+  type: 'test'
+  ...
+# Subtest: clipped annulus area reduces when the sensor is cropped
+ok 11 - clipped annulus area reduces when the sensor is cropped
+  ---
+  duration_ms: 0.637212
+  type: 'test'
+  ...
+# Subtest: ideal trace has zero error and lateral offset creates an error
+ok 12 - ideal trace has zero error and lateral offset creates an error
+  ---
+  duration_ms: 1.261996
+  type: 'test'
+  ...
+# Subtest: invalid a0 is rejected with a diagnostic
+ok 13 - invalid a0 is rejected with a diagnostic
+  ---
+  duration_ms: 0.111795
+  type: 'test'
+  ...
+# Subtest: invalid b0 is rejected with a diagnostic
+ok 14 - invalid b0 is rejected with a diagnostic
+  ---
+  duration_ms: 0.066399
+  type: 'test'
+  ...
+# Subtest: invalid scale is rejected with a diagnostic
+ok 15 - invalid scale is rejected with a diagnostic
+  ---
+  duration_ms: 0.041782
+  type: 'test'
+  ...
+# Subtest: invalid f is rejected with a diagnostic
+ok 16 - invalid f is rejected with a diagnostic
+  ---
+  duration_ms: 0.039068
+  type: 'test'
+  ...
+# Subtest: invalid pitch is rejected with a diagnostic
+ok 17 - invalid pitch is rejected with a diagnostic
+  ---
+  duration_ms: 0.06782
+  type: 'test'
+  ...
+# Subtest: invalid nx is rejected with a diagnostic
+ok 18 - invalid nx is rejected with a diagnostic
+  ---
+  duration_ms: 0.051917
+  type: 'test'
+  ...
+# Subtest: invalid ny is rejected with a diagnostic
+ok 19 - invalid ny is rejected with a diagnostic
+  ---
+  duration_ms: 0.042543
+  type: 'test'
+  ...
+# Subtest: invalid margin is rejected with a diagnostic
+ok 20 - invalid margin is rejected with a diagnostic
+  ---
+  duration_ms: 0.036083
+  type: 'test'
+  ...
+# Subtest: invalid lo is rejected with a diagnostic
+ok 21 - invalid lo is rejected with a diagnostic
+  ---
+  duration_ms: 0.038617
+  type: 'test'
+  ...
+# Subtest: invalid hi is rejected with a diagnostic
+ok 22 - invalid hi is rejected with a diagnostic
+  ---
+  duration_ms: 0.056123
+  type: 'test'
+  ...
+# Subtest: invalid inspect is rejected with a diagnostic
+ok 23 - invalid inspect is rejected with a diagnostic
+  ---
+  duration_ms: 0.039328
+  type: 'test'
+  ...
+# Subtest: invalid yaw is rejected with a diagnostic
+ok 24 - invalid yaw is rejected with a diagnostic
+  ---
+  duration_ms: 0.038557
+  type: 'test'
+  ...
+# Subtest: invalid tilt is rejected with a diagnostic
+ok 25 - invalid tilt is rejected with a diagnostic
+  ---
+  duration_ms: 0.035863
+  type: 'test'
+  ...
+# Subtest: invalid panoWidth is rejected with a diagnostic
+ok 26 - invalid panoWidth is rejected with a diagnostic
+  ---
+  duration_ms: 0.034701
+  type: 'test'
+  ...
+# Subtest: invalid dx is rejected with a diagnostic
+ok 27 - invalid dx is rejected with a diagnostic
+  ---
+  duration_ms: 0.043104
+  type: 'test'
+  ...
+# Subtest: invalid dz is rejected with a diagnostic
+ok 28 - invalid dz is rejected with a diagnostic
+  ---
+  duration_ms: 0.041331
+  type: 'test'
+  ...
+# Subtest: invalid useFpx is rejected with a diagnostic
+ok 29 - invalid useFpx is rejected with a diagnostic
+  ---
+  duration_ms: 0.038588
+  type: 'test'
+  ...
+# Subtest: invalid mode is rejected with a diagnostic
+ok 30 - invalid mode is rejected with a diagnostic
+  ---
+  duration_ms: 0.077745
+  type: 'test'
+  ...
+# Subtest: strict types at computation boundary
+ok 31 - strict types at computation boundary
+  ---
+  duration_ms: 0.214037
+  type: 'test'
+  ...
+# Subtest: validated inputs never return success with non-finite results (1200 domain probes)
+ok 32 - validated inputs never return success with non-finite results (1200 domain probes)
+  ---
+  duration_ms: 37.848813
+  type: 'test'
+  ...
+# Subtest: on-axis inner boundary is valid, azimuth degeneracy remains explicit
+ok 33 - on-axis inner boundary is valid, azimuth degeneracy remains explicit
+  ---
+  duration_ms: 0.220936
+  type: 'test'
+  ...
+# Subtest: GC4653 preset preserves the source values
+ok 34 - GC4653 preset preserves the source values
+  ---
+  duration_ms: 6.097507
+  type: 'test'
+  ...
+# Subtest: OS04A10 preset preserves the source values
+ok 35 - OS04A10 preset preserves the source values
+  ---
+  duration_ms: 0.395585
+  type: 'test'
+  ...
+# Subtest: reference metadata is preserved, not used to fill missing geometry
+ok 36 - reference metadata is preserved, not used to fill missing geometry
+  ---
+  duration_ms: 0.277791
+  type: 'test'
+  ...
+# Subtest: μ and µ, full width digits and English unit labels
+ok 37 - μ and µ, full width digits and English unit labels
+  ---
+  duration_ms: 0.341485
+  type: 'test'
+  ...
+# Subtest: traditional Chinese labels
+ok 38 - traditional Chinese labels
+  ---
+  duration_ms: 0.399661
+  type: 'test'
+  ...
+# Subtest: units can be on table headers
+ok 39 - units can be on table headers
+  ---
+  duration_ms: 0.258442
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 2.8-12mm
+ok 40 - ambiguous focal value stays empty: 2.8-12mm
+  ---
+  duration_ms: 0.450697
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 2.8~12 mm
+ok 41 - ambiguous focal value stays empty: 2.8~12 mm
+  ---
+  duration_ms: 0.101179
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 2.8～12 mm
+ok 42 - ambiguous focal value stays empty: 2.8～12 mm
+  ---
+  duration_ms: 0.240025
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 2.8 至 12 mm
+ok 43 - ambiguous focal value stays empty: 2.8 至 12 mm
+  ---
+  duration_ms: 0.924768
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 2.8 to 12mm
+ok 44 - ambiguous focal value stays empty: 2.8 to 12mm
+  ---
+  duration_ms: 0.16917
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 2.8, 4.9 mm
+ok 45 - ambiguous focal value stays empty: 2.8, 4.9 mm
+  ---
+  duration_ms: 0.076022
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 4.9±0.2mm
+ok 46 - ambiguous focal value stays empty: 4.9±0.2mm
+  ---
+  duration_ms: 0.058006
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: 4.9 mm (±5%)
+ok 47 - ambiguous focal value stays empty: 4.9 mm (±5%)
+  ---
+  duration_ms: 0.059828
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: ~4.9mm
+ok 48 - ambiguous focal value stays empty: ~4.9mm
+  ---
+  duration_ms: 0.050284
+  type: 'test'
+  ...
+# Subtest: ambiguous focal value stays empty: about 4.9mm
+ok 49 - ambiguous focal value stays empty: about 4.9mm
+  ---
+  duration_ms: 0.053609
+  type: 'test'
+  ...
+# Subtest: missing, wrong or equivalent focal unit is not guessed: 4.9
+ok 50 - missing, wrong or equivalent focal unit is not guessed: 4.9
+  ---
+  duration_ms: 0.086027
+  type: 'test'
+  ...
+# Subtest: missing, wrong or equivalent focal unit is not guessed: 4900um
+ok 51 - missing, wrong or equivalent focal unit is not guessed: 4900um
+  ---
+  duration_ms: 0.140939
+  type: 'test'
+  ...
+# Subtest: missing, wrong or equivalent focal unit is not guessed: 0.49cm
+ok 52 - missing, wrong or equivalent focal unit is not guessed: 0.49cm
+  ---
+  duration_ms: 0.05393
+  type: 'test'
+  ...
+# Subtest: missing, wrong or equivalent focal unit is not guessed: 4.9mm 35mm equivalent
+ok 53 - missing, wrong or equivalent focal unit is not guessed: 4.9mm 35mm equivalent
+  ---
+  duration_ms: 0.049523
+  type: 'test'
+  ...
+# Subtest: missing, wrong or equivalent focal unit is not guessed: 35mm equivalent 4.9
+ok 54 - missing, wrong or equivalent focal unit is not guessed: 35mm equivalent 4.9
+  ---
+  duration_ms: 0.040009
+  type: 'test'
+  ...
+# Subtest: missing, wrong or equivalent focal unit is not guessed: 4.9 mm equivalent
+ok 55 - missing, wrong or equivalent focal unit is not guessed: 4.9 mm equivalent
+  ---
+  duration_ms: 0.037425
+  type: 'test'
+  ...
+# Subtest: same duplicate is allowed
+ok 56 - same duplicate is allowed
+  ---
+  duration_ms: 0.136521
+  type: 'test'
+  ...
+# Subtest: a range remains blocked even if a later line gives an endpoint
+ok 57 - a range remains blocked even if a later line gives an endpoint
+  ---
+  duration_ms: 0.097785
+  type: 'test'
+  ...
+# Subtest: choice candidates contain both explicit resolutions
+ok 58 - choice candidates contain both explicit resolutions
+  ---
+  duration_ms: 0.177782
+  type: 'test'
+  ...
+# Subtest: mixed explicit and shorthand modes require confirmation
+ok 59 - mixed explicit and shorthand modes require confirmation
+  ---
+  duration_ms: 0.091085
+  type: 'test'
+  ...
+# Subtest: fps numbers do not override dimensions
+ok 60 - fps numbers do not override dimensions
+  ---
+  duration_ms: 0.085997
+  type: 'test'
+  ...
+# Subtest: simple resolution line and individual dimensions
+ok 61 - simple resolution line and individual dimensions
+  ---
+  duration_ms: 0.54052
+  type: 'test'
+  ...
+# Subtest: tab table keeps blank values with no column shift
+ok 62 - tab table keeps blank values with no column shift
+  ---
+  duration_ms: 0.170883
+  type: 'test'
+  ...
+# Subtest: no inherited or reference-only previous values
+ok 63 - no inherited or reference-only previous values
+  ---
+  duration_ms: 0.247285
+  type: 'test'
+  ...
+# Subtest: fpx does not become physical focal length
+ok 64 - fpx does not become physical focal length
+  ---
+  duration_ms: 0.084935
+  type: 'test'
+  ...
+# Subtest: not a units converter; sign and finite values are validated
+ok 65 - not a units converter; sign and finite values are validated
+  ---
+  duration_ms: 0.141239
+  type: 'test'
+  ...
+# Subtest: variable focal length is not converted into a definite value
+ok 66 - variable focal length is not converted into a definite value
+  ---
+  duration_ms: 2.612814
+  type: 'test'
+  ...
+# Subtest: multiple resolutions require explicit choice
+ok 67 - multiple resolutions require explicit choice
+  ---
+  duration_ms: 0.672104
+  type: 'test'
+  ...
+# Subtest: a third duplicate must not erase a conflict
+ok 68 - a third duplicate must not erase a conflict
+  ---
+  duration_ms: 1.217581
+  type: 'test'
+  ...
+# Subtest: empty table cells keep their column position
+ok 69 - empty table cells keep their column position
+  ---
+  duration_ms: 0.237061
+  type: 'test'
+  ...
+# Subtest: negative panorama width is rejected
+ok 70 - negative panorama width is rejected
+  ---
+  duration_ms: 0.566848
+  type: 'test'
+  ...
+# Subtest: fractional panorama width is rejected
+ok 71 - fractional panorama width is rejected
+  ---
+  duration_ms: 0.12827
+  type: 'test'
+  ...
+# Subtest: extreme finite input does not produce a successful invalid result
+ok 72 - extreme finite input does not produce a successful invalid result
+  ---
+  duration_ms: 0.297901
+  type: 'test'
+  ...
+# Subtest: null is not silently treated as numeric zero
+ok 73 - null is not silently treated as numeric zero
+  ---
+  duration_ms: 0.124074
+  type: 'test'
+  ...
+1..73
+# tests 73
+# suites 0
+# pass 73
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 115.890955

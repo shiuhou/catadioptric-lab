@@ -1,0 +1,176 @@
+TAP version 13
+# Subtest: variable focal length is not converted into a definite value
+not ok 1 - variable focal length is not converted into a definite value
+  ---
+  duration_ms: 3.082334
+  type: 'test'
+  location: '/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:6:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    2.8 !== undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual: 2.8
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:8:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: multiple resolutions require explicit choice
+not ok 2 - multiple resolutions require explicit choice
+  ---
+  duration_ms: 0.559847
+  type: 'test'
+  location: '/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:10:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 2688
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual: 2688
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:12:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: a third duplicate must not erase a conflict
+ok 3 - a third duplicate must not erase a conflict
+  ---
+  duration_ms: 0.339712
+  type: 'test'
+  ...
+# Subtest: empty table cells keep their column position
+ok 4 - empty table cells keep their column position
+  ---
+  duration_ms: 0.332461
+  type: 'test'
+  ...
+# Subtest: negative panorama width is rejected
+not ok 5 - negative panorama width is rejected
+  ---
+  duration_ms: 7.680497
+  type: 'test'
+  location: '/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:22:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(O.validate({...O.defaults,panoWidth:-5}))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: ~
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:22:56)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: fractional panorama width is rejected
+not ok 6 - fractional panorama width is rejected
+  ---
+  duration_ms: 0.633887
+  type: 'test'
+  location: '/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:23:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(O.validate({...O.defaults,panoWidth:800.5}))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: ~
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:23:58)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: extreme finite input does not produce a successful invalid result
+not ok 7 - extreme finite input does not produce a successful invalid result
+  ---
+  duration_ms: 1.363324
+  type: 'test'
+  location: '/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:24:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:24:86)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: null is not silently treated as numeric zero
+not ok 8 - null is not silently treated as numeric zero
+  ---
+  duration_ms: 0.994269
+  type: 'test'
+  location: '/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:25:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(O.validate({...O.defaults,dx:null}))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: ~
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (/mnt/data/catadioptric_lab_v7/tests/regressions.test.cjs:25:65)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 2
+# fail 6
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 87.148524

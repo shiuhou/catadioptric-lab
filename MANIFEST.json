@@ -1,0 +1,207 @@
+{
+  "version": "7.0.0",
+  "date": "2026-09-15",
+  "base": "uploaded v6 index.html; no remote modifications",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 50,
+      "sha256": "5273c2dc10ddf4c3f6abfde382a947f02bdcd46a34aded0c13e531b92057e565"
+    },
+    {
+      "path": ".nojekyll",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 2774,
+      "sha256": "15c5e656584e633b746d7920b23ece36ead62a064f8a2dc1d1805a2fb7ccfbc5"
+    },
+    {
+      "path": "DEPLOYMENT.md",
+      "size": 2617,
+      "sha256": "925e61cfdf3b02fba6f3faa5e724a5d35b865d28894f2ba73e8d4c70bdd46485"
+    },
+    {
+      "path": "LICENSE_STATUS.md",
+      "size": 346,
+      "sha256": "04a43d35242b26efae069a08503fb672b8ce059fd946552e2a284c64c3e581a8"
+    },
+    {
+      "path": "README.md",
+      "size": 7261,
+      "sha256": "8f8a34bfa1f56d606c2b0497fc995c307eeda48818ec1970b67ab3c2629ae1a3"
+    },
+    {
+      "path": "assets/desktop-preview.png",
+      "size": 187418,
+      "sha256": "1987a2b9770998ee37134cf04e318f0e3c93f8bb50770c524572444d158e41c4"
+    },
+    {
+      "path": "assets/share-preview.png",
+      "size": 152442,
+      "sha256": "bc83c86f150c2f60c1d18d49499e83b3cc4e71aee47e62f312bec09fc2bd3e2a"
+    },
+    {
+      "path": "docs/MODEL.md",
+      "size": 3729,
+      "sha256": "ff8af2762e60aab24eb4fa648112d0511ec2d7da41567805b65d12e11480ef95"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "size": 3740,
+      "sha256": "91bb465f81dc585b7c38323d4021ce648ea56d1232928c5d02517e2a4708a3c8"
+    },
+    {
+      "path": "evidence/after_regressions.txt",
+      "size": 1429,
+      "sha256": "b1a3271cf638c7f5a0818cb653fed950895f7296da2b65ba511cbef57dd8b932"
+    },
+    {
+      "path": "evidence/baseline_regressions.txt",
+      "size": 6035,
+      "sha256": "c8f4c9e89bf8b3ab981f82bf94ddbfb9c2e6c7e3c33e69014523da4eacf8fdd4"
+    },
+    {
+      "path": "evidence/browser_checks.json",
+      "size": 17080,
+      "sha256": "e656ca9c7751eecac3cb86473dec64d55491974bb1b4a748e8647cb4a34bec04"
+    },
+    {
+      "path": "evidence/browser_tests.txt",
+      "size": 320,
+      "sha256": "9b06ba647c182115c1003d8126d7c8a7316d1999c15da47542f6e0ff8aea03c1"
+    },
+    {
+      "path": "evidence/build_check.txt",
+      "size": 57,
+      "sha256": "47ade7ef3b8d4a704ed75fc26ce17787a3ed271b048acb39506e9eb670254865"
+    },
+    {
+      "path": "evidence/camera_ambiguity_1440.png",
+      "size": 308416,
+      "sha256": "9660c0c9abe8290913080a3989c35cc771b514a0518eb2dcc3d7bbb63a247f0c"
+    },
+    {
+      "path": "evidence/camera_ambiguity_390.png",
+      "size": 245764,
+      "sha256": "842d4b7f6a31964c059cd0257d57ca4ae24c23c30b61a5be325e621d47adda59"
+    },
+    {
+      "path": "evidence/desktop_1440.png",
+      "size": 187418,
+      "sha256": "1987a2b9770998ee37134cf04e318f0e3c93f8bb50770c524572444d158e41c4"
+    },
+    {
+      "path": "evidence/desktop_990.png",
+      "size": 174217,
+      "sha256": "fd036c3fe40eebaf378451c5eb564643384a06043b93b621e1332eeaca0264fa"
+    },
+    {
+      "path": "evidence/final_check.txt",
+      "size": 12613,
+      "sha256": "9b982917e3f552b9b8f63fc842363934bb724e4350570c2ffd9c692bf0d3e3f3"
+    },
+    {
+      "path": "evidence/inline_formula.png",
+      "size": 210125,
+      "sha256": "6f99022272dc553b0126a24aeee60f35b40b05742b267514d8eb4c55a95a59ba"
+    },
+    {
+      "path": "evidence/mobile_390.png",
+      "size": 140324,
+      "sha256": "1b1df5cc00503b5e2bf635dc0c4934f8b8554eb28b5573b64f4f26f4bebc4754"
+    },
+    {
+      "path": "evidence/unit_tests.txt",
+      "size": 12524,
+      "sha256": "d01e1ca3217aaf336093f7027916f217eacc818c4847fad4d2c01596e30442ec"
+    },
+    {
+      "path": "evidence/verification.md",
+      "size": 1886,
+      "sha256": "1a4a41c1bf778d0bdd77eed282a56ea18348a48cb16b1f47822818c94e908c05"
+    },
+    {
+      "path": "examples/multi_mode_camera.txt",
+      "size": 111,
+      "sha256": "925877e75d49f1de1d75d15a4972187e52bce6b310a04383172c5fa21b1f4673"
+    },
+    {
+      "path": "examples/os04a10_user_reference.txt",
+      "size": 289,
+      "sha256": "101893ae491debbf736ce45b99daa79fdb63df16fcc05782dcc970bbd92381f3"
+    },
+    {
+      "path": "examples/v6_legacy.json",
+      "size": 486,
+      "sha256": "900cdf64765134775673934a810d9bfd77a9a9d60029550e2040bbb38be718fb"
+    },
+    {
+      "path": "index.html",
+      "size": 161785,
+      "sha256": "86a64e78d2e29be4d410300739c3454424950c4d0d07320f7ad5ebd1e3e67500"
+    },
+    {
+      "path": "package.json",
+      "size": 308,
+      "sha256": "6408161839aa03221fe1a4662399d472b56ec800da12152aa45cfe507d426a93"
+    },
+    {
+      "path": "scripts/build.cjs",
+      "size": 1195,
+      "sha256": "7d452e0fa8bb09904883a89a55bc72575a79e70376ae4a92ceb14a2bf6b5e3ab"
+    },
+    {
+      "path": "scripts/test.cjs",
+      "size": 551,
+      "sha256": "85a20c7f2c24403a7bac93e02f7dddfa3496da590fa8c61c33ed39deb5bb0880"
+    },
+    {
+      "path": "src/app.js",
+      "size": 95734,
+      "sha256": "d01f819787bb087fda367b638259d169e85ab4ec6e3277dbbd364211ca0f38b9"
+    },
+    {
+      "path": "src/camera-spec.js",
+      "size": 9561,
+      "sha256": "59ed3cc1a18e6c24d245538ae3d53ee68b0e249a414cbc2fd9b12dffc59a033a"
+    },
+    {
+      "path": "src/optics.js",
+      "size": 7955,
+      "sha256": "0ad308b8dba8c658e648844cd4c415aa86acaa3346964caa6459f29c77c71d10"
+    },
+    {
+      "path": "src/page.html",
+      "size": 8480,
+      "sha256": "dbb9faf64298e60e87d2da8305412691ad569e062b90100a2887fef8e3770595"
+    },
+    {
+      "path": "src/styles.css",
+      "size": 40027,
+      "sha256": "0f127282a47f0260abaa9906e7ea184b040d43c0cf1ceead4c318d35bf58620d"
+    },
+    {
+      "path": "tests/browser_checks.py",
+      "size": 19520,
+      "sha256": "a2f84c4f951fa2e23b4da98ff2d1120fd0ac03fdf3ece1a2ca64eb931416f15a"
+    },
+    {
+      "path": "tests/optics.test.cjs",
+      "size": 5434,
+      "sha256": "33eb6106ccc9e21f2aebca90060cce913e6327aa7a640e62604204d20528f91f"
+    },
+    {
+      "path": "tests/parser.test.cjs",
+      "size": 3926,
+      "sha256": "eacc1c73f38f9ed8fa8f6fed1edecbbe78e1b195f73e2566c66cf2e2d0dc31cb"
+    },
+    {
+      "path": "tests/regressions.test.cjs",
+      "size": 1571,
+      "sha256": "02bfe9c9ad6e17500904b8aa0cff7b68c3d1fc84c1c9356700f1e139db335f07"
+    }
+  ]
+}

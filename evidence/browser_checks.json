@@ -1,0 +1,752 @@
+{
+  "mode": "content",
+  "storage_validation": "in-memory Storage API double; NOT native persistence evidence",
+  "results": [
+    {
+      "name": "1440px design: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "1440px design: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440px camera: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "1440px camera: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440px panorama: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "1440px panorama: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440px assembly: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "1440px assembly: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440px formulas: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "1440px formulas: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440px files: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "bad": []
+      }
+    },
+    {
+      "name": "1440px files: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "990px design: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 990,
+        "scroll": 990,
+        "bad": []
+      }
+    },
+    {
+      "name": "990px design: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "990px camera: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 990,
+        "scroll": 990,
+        "bad": []
+      }
+    },
+    {
+      "name": "990px camera: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "990px panorama: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 990,
+        "scroll": 990,
+        "bad": []
+      }
+    },
+    {
+      "name": "990px panorama: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "990px assembly: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 990,
+        "scroll": 990,
+        "bad": []
+      }
+    },
+    {
+      "name": "990px assembly: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "990px formulas: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 990,
+        "scroll": 990,
+        "bad": []
+      }
+    },
+    {
+      "name": "990px formulas: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "990px files: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 990,
+        "scroll": 990,
+        "bad": []
+      }
+    },
+    {
+      "name": "990px files: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "720px design: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 720,
+        "scroll": 720,
+        "bad": []
+      }
+    },
+    {
+      "name": "720px design: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "720px camera: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 720,
+        "scroll": 720,
+        "bad": []
+      }
+    },
+    {
+      "name": "720px camera: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "720px panorama: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 720,
+        "scroll": 720,
+        "bad": []
+      }
+    },
+    {
+      "name": "720px panorama: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "720px assembly: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 720,
+        "scroll": 720,
+        "bad": []
+      }
+    },
+    {
+      "name": "720px assembly: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "720px formulas: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 720,
+        "scroll": 720,
+        "bad": []
+      }
+    },
+    {
+      "name": "720px formulas: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "720px files: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 720,
+        "scroll": 720,
+        "bad": []
+      }
+    },
+    {
+      "name": "720px files: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390px design: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "390px design: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390px camera: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "390px camera: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390px panorama: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "390px panorama: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390px assembly: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "390px assembly: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390px formulas: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "390px formulas: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390px files: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "bad": []
+      }
+    },
+    {
+      "name": "390px files: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "360px design: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 360,
+        "scroll": 360,
+        "bad": []
+      }
+    },
+    {
+      "name": "360px design: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "360px camera: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 360,
+        "scroll": 360,
+        "bad": []
+      }
+    },
+    {
+      "name": "360px camera: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "360px panorama: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 360,
+        "scroll": 360,
+        "bad": []
+      }
+    },
+    {
+      "name": "360px panorama: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "360px assembly: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 360,
+        "scroll": 360,
+        "bad": []
+      }
+    },
+    {
+      "name": "360px assembly: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "360px formulas: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 360,
+        "scroll": 360,
+        "bad": []
+      }
+    },
+    {
+      "name": "360px formulas: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "360px files: no horizontal page/control overflow",
+      "pass": true,
+      "detail": {
+        "inner": 360,
+        "scroll": 360,
+        "bad": []
+      }
+    },
+    {
+      "name": "360px files: SVG labels keep their minimum screen size",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "short viewport formula does not trap a tall sticky stage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "diagram updates before slider release",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unfinished drag does not create repeated undo steps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "one drag commits one step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "undo restores size and ring",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "redo restores changed size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new edit discards redo branch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "corresponding formula opens without page navigation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inline formula substitutes live changed values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "formula can be closed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "baseline action is visible and pins current design",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "baseline pin can be undone",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cross-page keyboard undo works without changing page",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard redo works",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "view reset is undoable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "full reset restores numeric default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "full reset preserves recoverability",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "extraction alone does not change current design",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source status is visible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preset applies all four fields",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preset application is one undo step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original exposure metadata not silently corrected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "undo restores parameters AND source record",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "redo restores source record",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ambiguous specification disables Apply",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "resolution choice starts empty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual focal confirmation is labeled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "chosen resolution, not first listed resolution, is applied",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ambiguity evidence stays with applied source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source text is escaped, not interpreted as markup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "editing source invalidates previously extracted fields",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing fields do not borrow prior camera values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ambiguous source view has no mobile overflow",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "invalid full-width input cannot produce a successful result",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "diagnostic names the field and exposes correction entry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "invalid temporary edit can be undone",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "v6 JSON remains importable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bad JSON is rejected atomically without history mutation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unknown schema does not replace current design",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "export identifies v7 and preserves current parameter values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mapping CSV has 361 data rows and no NaN",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "CAD profile has 401 finite XYZ triplets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "committed parameters are serialized with a schema",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source data are excluded by default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "invalid edit preserves last good persisted record",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "invalid edit has visible non-saving status",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "reopening offers restore without autoapplying",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "pending recovery is not overwritten by new edits",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "restore recovers the chosen design",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "restore itself can be undone",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "default storage contains no applied camera name or raw text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source record is persisted only after explicit opt-in",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "opting out removes previously stored source text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "clear removes only this tool record",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "closing immediately after Clear does not recreate the record",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "next genuine edit resumes local saving",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "corrupt/unknown session is not applied: {broken",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "corrupt session can be explicitly cleared",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "corrupt/unknown session is not applied: {\"schema\":\"future-session\"}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "corrupt session can be explicitly cleared",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "corrupt/unknown session is not applied: {\"schema\":\"catadioptric-sessio",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "corrupt session can be explicitly cleared",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "denied storage falls back without breaking the app",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "quota failure falls back to export with a visible notice",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no uncaught page JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "page_errors": []
+}

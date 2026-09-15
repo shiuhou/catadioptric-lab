@@ -1,0 +1,4 @@
+型号：范围与多模式示例
+Resolution: 2688x1520, 1920x1080
+Pixel pitch: 2.9um
+Focal length: 2.8–12mm

@@ -1,0 +1,1 @@
+PASS: index.html is an exact deterministic build of src.

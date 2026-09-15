@@ -1,0 +1,6 @@
+PASS responsive layout and readable diagrams
+PASS live interaction, undo/redo, formulas and baseline
+PASS specification extraction and explicit confirmation
+PASS invalid inputs, atomic imports and portable exports
+PASS local recovery, privacy and storage failure handling
+125/125 browser assertions passed. Mode=content

@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: variable focal length is not converted into a definite value
+ok 1 - variable focal length is not converted into a definite value
+  ---
+  duration_ms: 2.340478
+  type: 'test'
+  ...
+# Subtest: multiple resolutions require explicit choice
+ok 2 - multiple resolutions require explicit choice
+  ---
+  duration_ms: 0.490034
+  type: 'test'
+  ...
+# Subtest: a third duplicate must not erase a conflict
+ok 3 - a third duplicate must not erase a conflict
+  ---
+  duration_ms: 4.27835
+  type: 'test'
+  ...
+# Subtest: empty table cells keep their column position
+ok 4 - empty table cells keep their column position
+  ---
+  duration_ms: 0.245052
+  type: 'test'
+  ...
+# Subtest: negative panorama width is rejected
+ok 5 - negative panorama width is rejected
+  ---
+  duration_ms: 0.554269
+  type: 'test'
+  ...
+# Subtest: fractional panorama width is rejected
+ok 6 - fractional panorama width is rejected
+  ---
+  duration_ms: 0.125205
+  type: 'test'
+  ...
+# Subtest: extreme finite input does not produce a successful invalid result
+ok 7 - extreme finite input does not produce a successful invalid result
+  ---
+  duration_ms: 0.292072
+  type: 'test'
+  ...
+# Subtest: null is not silently treated as numeric zero
+ok 8 - null is not silently treated as numeric zero
+  ---
+  duration_ms: 0.265582
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 57.960548
